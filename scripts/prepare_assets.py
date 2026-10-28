@@ -57,7 +57,7 @@ FOTOS = {
     "fachada": ("posts/122.jpg", (0, 1)),
     "tarjetas-regalo": ("posts/057.jpg", (0, 1)),
     "tarjeta-mostrador": ("posts/123.jpg", (0, 1)),
-    "regalo-madre": ("posts/032.jpg", (0, .6)),
+    "regalo-madre": ("posts/032.jpg", (0, .54)),
     # faciales
     "facial-masaje": ("posts/016.jpg", (0, 1)),
     "facial-mascarilla": ("posts/125.jpg", (0, 1)),

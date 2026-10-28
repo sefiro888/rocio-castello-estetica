@@ -978,3 +978,34 @@ main p { font-weight: 400; }
 
 /* evita que los hijos de las rejillas se ensanchen por su contenido desplazable */
 [class*="-grid"] > * { min-width: 0; }
+
+/* ---------- ajustes móviles tras revisión con capturas */
+.ficha-res { text-align: left; justify-content: flex-start; }
+@media (max-width: 1000px) {
+  /* el texto de la cabecera ya no lleva caja: la foto se funde en crema */
+  .hero-s-txt { background: none; padding-top: 0; }
+  .hero-s-grid { margin-top: -30px; }
+  .hero-s-media::before { background: linear-gradient(0deg, var(--crema) 0%, rgba(244, 237, 226, .85) 9%, rgba(244, 237, 226, 0) 34%); }
+}
+@media (max-width: 700px) {
+  /* equipo: tarjetas horizontales a una columna, más legibles */
+  .miembros, body[data-pagina="inicio"] .miembros { grid-template-columns: 1fr; gap: 14px; }
+  .miembro { flex-direction: row; }
+  .miembro-img { flex: 0 0 38%; aspect-ratio: auto; min-height: 190px; }
+  .miembro-txt { padding: 18px 18px 20px; }
+  .miembro-txt small { letter-spacing: .16em; line-height: 1.4; display: block; }
+  .miembro-txt h3 { font-size: 1.45rem; margin: 6px 0; }
+  .miembro-txt p { font-size: .88rem; line-height: 1.55; }
+  /* tarjeta de Instagram: avatar y datos más aireados */
+  .igc { padding: 18px 14px; }
+  .igc-top { display: grid; grid-template-columns: 74px 1fr; gap: 6px 14px; align-items: center; }
+  .igc-av { width: 74px; }
+  .igc-datos { display: contents; }
+  .igc-user { grid-column: 2; grid-row: 1; align-self: end; }
+  .igc-nums { grid-column: 2; grid-row: 2; align-self: start; margin: 0; gap: 12px; }
+  .igc-av { grid-row: 1 / span 2; }
+  .igc-bio { grid-column: 1 / -1; margin-top: 10px; }
+  /* tarjeta regalo sin perspectiva en pantallas pequeñas */
+  .tarjeta { transform: none; }
+  .tg-ops .tg-op { padding: 14px 16px; }
+}

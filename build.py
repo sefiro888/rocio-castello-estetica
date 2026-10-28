@@ -16,7 +16,7 @@ from content import (NEGOCIO as N, CENTROS, HORARIO, HORARIO_VERANO, CINTA, RESE
                      IG_DESTACADOS, IG_POSTS, REELS, SERVICIOS, SERV, GRUPOS, QUIZ, COMPARA, EQUIPO)
 from detalle import DETALLE  # noqa: E402
 
-VERSION = "9"
+VERSION = "10"
 BASE = "https://sefiro888.github.io/rocio-castello-estetica/"
 e = escape
 POSTS_META = json.loads((ROOT / "_fuentes" / "instagram" / "posts" / "meta.json").read_text(encoding="utf-8"))
@@ -571,7 +571,7 @@ def sec_fichas(s, d):
           <div class="ficha-ideal"><small>Ideal para</small><p>{e(ideal)}</p></div>
           <div class="ficha-ben"><small>Lo que notarás</small><ul>{bens}</ul></div>
         </div>
-        <button class="enlace ficha-res" data-reserva data-servicio="{e(n)}">Reservar {e(n.split(' · ')[0])} {ico('flecha')}</button>
+        <button class="enlace ficha-res" data-reserva data-servicio="{e(n)}">Reservar este tratamiento {ico('flecha')}</button>
       </article>"""
     return f"""
 <section class="sec fichas-sec" id="carta">
