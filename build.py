@@ -16,7 +16,7 @@ from content import (NEGOCIO as N, CENTROS, HORARIO, HORARIO_VERANO, CINTA, RESE
                      IG_DESTACADOS, IG_POSTS, REELS, SERVICIOS, SERV, GRUPOS, QUIZ, COMPARA, EQUIPO)
 from detalle import DETALLE  # noqa: E402
 
-VERSION = "10"
+VERSION = "13"
 BASE = "https://sefiro888.github.io/rocio-castello-estetica/"
 e = escape
 POSTS_META = json.loads((ROOT / "_fuentes" / "instagram" / "posts" / "meta.json").read_text(encoding="utf-8"))
@@ -957,30 +957,84 @@ def pagina_centro():
     return head("El centro y el equipo | Rocío Castelló Estética Avanzada", "Conoce a Rocío Castelló, a su equipo y los dos centros de estética avanzada en Santomera y Murcia.", "centro") + menu() + cuerpo + pie()
 
 
+def enlace_caso(titulo, cat):
+    """Página del tratamiento al que pertenece cada caso."""
+    if titulo == "Tesla Med":
+        return "tesla-med"
+    if titulo in ("Symmed", "Zionic"):
+        return "tecnologia" if titulo == "Symmed" else "corporales"
+    if titulo == "Micropigmentación":
+        return "cejas-micropigmentacion"
+    if titulo in ("Lifting de pestañas", "Extensiones"):
+        return "pestanas"
+    return "corporales" if cat == "Cuerpo" else "faciales"
+
+
+TEXTO_CASO = {
+    "Rostro": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional.",
+    "Cuerpo": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación.",
+    "Mirada": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo.",
+    "Micropigmentación": "Estudiamos tus facciones y el tono ideal antes de trazar una sola línea. Primera consulta gratuita.",
+}
+
+
 def pagina_resultados():
     hero = hero_split("Antes y después", "Resultados", "que hablan solos", "Casos reales de nuestras clientas, publicados con su permiso. Sin filtros y sin cirugía: diagnóstico, constancia y la tecnología adecuada para cada piel y cada cuerpo.",
-                      "hero-resultados", "Cabina de tratamiento", "", (("Casos", "+20"), ("Filtros", "ninguno"), ("Cirugía", "no")),
-                      btn_reserva() + '<a class="btn btn-linea" href="#galeria-res">Ver casos</a>', ("Resultados",))
+                      "hero-resultados", "Cabina de tratamiento", "", (("Casos", str(len(COMPARA))), ("Filtros", "ninguno"), ("Cirugía", "no")),
+                      btn_reserva() + '<a class="btn btn-linea" href="#visor">Ver casos</a>', ("Resultados",))
     cats = ["Rostro", "Cuerpo", "Mirada", "Micropigmentación"]
-    filtros = '<button class="filtro on" data-f="todo">Todos</button>' + "".join(f'<button class="filtro" data-f="{e(c)}">{e(c)}</button>' for c in cats)
-    items = "".join(comparador(n, cat=c) for n, _, _, c in COMPARA)
-    montajes = resultados_grid(["018", "098", "106", "014", "135", "079", "042", "059"], "res-ancho")
+    cuenta = {c: sum(1 for x in COMPARA if x[3] == c) for c in cats}
+    filtros = f'<button class="on" data-f="todo">Todos<small>{len(COMPARA)}</small></button>' + "".join(
+        f'<button data-f="{e(c)}">{e(c)}<small>{cuenta[c]}</small></button>' for c in cats)
+    datos = [{"n": n, "t": t, "d": d, "c": c, "u": enlace_caso(t, c) + ".html", "x": TEXTO_CASO[c]} for n, t, d, c in COMPARA]
+    n0, t0, d0, c0 = COMPARA[0]
+    tira = "".join(
+        f'<button class="visor-mini{" on" if i == 0 else ""}" data-i="{i}" data-cat="{e(c)}" aria-label="Ver caso {i + 1}: {e(t)}">'
+        f'<img src="assets/img/ad/{n}-d.webp" alt="" loading="lazy"><span>{e(t)}</span></button>'
+        for i, (n, t, d, c) in enumerate(COMPARA))
+    portada = {"Rostro": "fb128", "Cuerpo": "fb178", "Mirada": "079", "Micropigmentación": "135"}
+    capitulos = "".join(
+        f'<button class="capitulo reveal" data-ir-cat="{e(c)}"><img src="assets/img/ad/{portada[c]}-d.webp" alt="" loading="lazy">'
+        f'<span><small>{cuenta[c]} casos</small><strong>{e(c)}</strong><em>Ver transformaciones {ico("flecha")}</em></span></button>'
+        for c in cats)
     cuerpo = f"""
 <main id="main">
 {hero}
-<section class="sec" id="galeria-res">
+<section class="sec visor-sec" id="visor">
   <div class="wrap">
-    <div class="filtros reveal">{filtros}</div>
-    <p class="cmp-ayuda reveal">{ico('chevi')} Arrastra la línea de cada foto para ver el antes y el después {ico('chev')}</p>
-    <div class="cmp-grid cmp-grid-res">{items}</div>
+    <div class="sec-cab reveal"><div><p class="eyebrow">Caso a caso</p><h2 class="h2">Descubre cada <em>transformación</em></h2></div>
+      <p class="sec-nota">Arrastra la línea de la foto para comparar. Pasa al siguiente caso con las flechas.</p></div>
+    <div class="visor-filtros" role="tablist">{filtros}</div>
+    <div class="visor" data-visor>
+      <div class="visor-cmp">{comparador(n0, eager=True)}</div>
+      <div class="visor-info" aria-live="polite">
+        <p class="visor-num"><strong data-v="i">01</strong> / <span data-v="total">{len(COMPARA):02d}</span></p>
+        <p class="eyebrow" data-v="c">{e(c0)}</p>
+        <h2 class="h2" data-v="t">{e(t0)}</h2>
+        <p class="visor-det" data-v="d">{e(d0)}</p>
+        <p class="visor-txt" data-v="x">{e(TEXTO_CASO[c0])}</p>
+        <div class="visor-acc">
+          <button class="btn btn-tinta btn-sm" data-reserva data-servicio="{e(t0)}" data-v-res>{ico('wa')} Quiero este resultado</button>
+          <a class="enlace" href="{enlace_caso(t0, c0)}.html" data-v-url>Ver el tratamiento {ico('flecha')}</a>
+        </div>
+        <div class="visor-nav">
+          <button class="visor-prev" aria-label="Caso anterior">{ico('chevi')}</button>
+          <div class="visor-barra"><span></span></div>
+          <button class="visor-next" aria-label="Caso siguiente">{ico('chev')}</button>
+        </div>
+      </div>
+    </div>
+    <div class="visor-tira">{tira}</div>
+  </div>
+  <script type="application/json" id="casos">{json.dumps(datos, ensure_ascii=False)}</script>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-cab reveal"><div><p class="eyebrow">Por tipo de tratamiento</p><h2 class="h2">Elige qué quieres <em>ver</em></h2></div></div>
+    <div class="capitulos">{capitulos}</div>
   </div>
 </section>
-<section class="sec res-home">
-  <div class="wrap"><div class="sec-cab reveal"><div><p class="eyebrow">Tal y como los publicamos</p><h2 class="h2">Nuestros <em>casos</em> en Instagram</h2></div></div></div>
-  <div class="res-pista" data-arrastre>{montajes}</div>
-</section>
 {sec_resenas()}
-{sec_reels()}
 </main>
 """
     return head("Resultados antes y después | Rocío Castelló Estética Avanzada", "Antes y después reales de tratamientos faciales, corporales, pestañas y micropigmentación en Santomera y Murcia.", "resultados") + menu() + cuerpo + pie()

@@ -299,6 +299,64 @@
     $$(".ficha").forEach((f) => fo.observe(f));
   }
 
+  // visor de resultados caso a caso
+  const visor = $("[data-visor]");
+  if (visor) {
+    const casos = JSON.parse($("#casos").textContent);
+    const cmp = $(".cmp", visor);
+    const v = (k) => $(`[data-v="${k}"]`, visor);
+    const minis = $$(".visor-mini");
+    let lista = casos.map((_, i) => i);
+    let pos = 0;
+    const dos = (n) => String(n).padStart(2, "0");
+    const pinta = (animar = true) => {
+      const i = lista[pos], c = casos[i];
+      const aplica = () => {
+        $(".cmp-d", cmp).src = "assets/img/ad/" + c.n + "-d.webp";
+        $(".cmp-a img", cmp).src = "assets/img/ad/" + c.n + "-a.webp";
+        $(".cmp-d", cmp).alt = "Después: " + c.t + ", " + c.d.toLowerCase();
+        cmp.style.setProperty("--pos", "50%");
+        $(".cmp-rango", cmp).value = 50;
+        v("i").textContent = dos(pos + 1);
+        v("total").textContent = dos(lista.length);
+        v("c").textContent = c.c;
+        v("t").textContent = c.t;
+        v("d").textContent = c.d;
+        v("x").textContent = c.x;
+        $("[data-v-url]", visor).href = c.u;
+        $("[data-v-res]", visor).dataset.servicio = c.t + " (" + c.d + ")";
+        $(".visor-barra span", visor).style.width = ((pos + 1) / lista.length) * 100 + "%";
+        minis.forEach((m) => m.classList.toggle("on", +m.dataset.i === i));
+        const activo = minis.find((m) => +m.dataset.i === i);
+        if (activo) activo.parentElement.scrollTo({ left: activo.offsetLeft - activo.parentElement.clientWidth / 2 + activo.clientWidth / 2, behavior: "smooth" });
+        setTimeout(() => cmp.classList.remove("cambia"), 60);
+      };
+      if (!animar) return aplica();
+      cmp.classList.add("cambia");
+      const pre = new Image();
+      pre.src = "assets/img/ad/" + c.n + "-a.webp";
+      setTimeout(aplica, 320);
+    };
+    const mueve = (d) => { pos = (pos + d + lista.length) % lista.length; pinta(); };
+    $(".visor-prev", visor).addEventListener("click", () => mueve(-1));
+    $(".visor-next", visor).addEventListener("click", () => mueve(1));
+    minis.forEach((m) => m.addEventListener("click", () => { pos = Math.max(0, lista.indexOf(+m.dataset.i)); pinta(); }));
+    const filtra = (cat) => {
+      $$(".visor-filtros button").forEach((b) => b.classList.toggle("on", b.dataset.f === cat));
+      lista = casos.map((c, i) => [c, i]).filter(([c]) => cat === "todo" || c.c === cat).map(([, i]) => i);
+      minis.forEach((m) => { m.hidden = cat !== "todo" && m.dataset.cat !== cat; });
+      pos = 0;
+      pinta();
+    };
+    $$(".visor-filtros button").forEach((b) => b.addEventListener("click", () => filtra(b.dataset.f)));
+    $$("[data-ir-cat]").forEach((b) => b.addEventListener("click", () => {
+      filtra(b.dataset.irCat);
+      $("#visor").scrollIntoView({ behavior: "smooth" });
+    }));
+    // precarga discreta del siguiente caso
+    visor.addEventListener("mouseenter", () => { const c = casos[lista[(pos + 1) % lista.length]]; new Image().src = "assets/img/ad/" + c.n + "-d.webp"; });
+  }
+
   // ¿abierto ahora?
   const ab = $("[data-abierto]");
   if (ab) {

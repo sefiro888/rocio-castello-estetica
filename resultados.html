@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=10">
+<link rel="stylesheet" href="assets/css/site.css?v=13">
 <script>document.documentElement.classList.add("anim")</script>
 
 </head>
@@ -105,482 +105,55 @@
       <p class="eyebrow">Antes y después</p>
       <h1 class="display hero-s-h"><span>Resultados</span><span class="script">que hablan solos</span></h1>
       <p class="lead">Casos reales de nuestras clientas, publicados con su permiso. Sin filtros y sin cirugía: diagnóstico, constancia y la tecnología adecuada para cada piel y cada cuerpo.</p>
-      <div class="hero-btns"><button class="btn btn-tinta" data-reserva><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z" fill="currentColor"/></svg> Reservar cita</button><a class="btn btn-linea" href="#galeria-res">Ver casos</a></div>
-      <ul class="hero-datos"><li><small>Casos</small><strong>+20</strong></li><li><small>Filtros</small><strong>ninguno</strong></li><li><small>Cirugía</small><strong>no</strong></li></ul>
+      <div class="hero-btns"><button class="btn btn-tinta" data-reserva><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z" fill="currentColor"/></svg> Reservar cita</button><a class="btn btn-linea" href="#visor">Ver casos</a></div>
+      <ul class="hero-datos"><li><small>Casos</small><strong>46</strong></li><li><small>Filtros</small><strong>ninguno</strong></li><li><small>Cirugía</small><strong>no</strong></li></ul>
     </div>
   </div>
 </section>
 
-<section class="sec" id="galeria-res">
+<section class="sec visor-sec" id="visor">
   <div class="wrap">
-    <div class="filtros reveal"><button class="filtro on" data-f="todo">Todos</button><button class="filtro" data-f="Rostro">Rostro</button><button class="filtro" data-f="Cuerpo">Cuerpo</button><button class="filtro" data-f="Mirada">Mirada</button><button class="filtro" data-f="Micropigmentación">Micropigmentación</button></div>
-    <p class="cmp-ayuda reveal"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Arrastra la línea de cada foto para ver el antes y el después <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
-    <div class="cmp-grid cmp-grid-res">
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
+    <div class="sec-cab reveal"><div><p class="eyebrow">Caso a caso</p><h2 class="h2">Descubre cada <em>transformación</em></h2></div>
+      <p class="sec-nota">Arrastra la línea de la foto para comparar. Pasa al siguiente caso con las flechas.</p></div>
+    <div class="visor-filtros" role="tablist"><button class="on" data-f="todo">Todos<small>46</small></button><button data-f="Rostro">Rostro<small>25</small></button><button data-f="Cuerpo">Cuerpo<small>13</small></button><button data-f="Mirada">Mirada<small>6</small></button><button data-f="Micropigmentación">Micropigmentación<small>2</small></button></div>
+    <div class="visor" data-visor>
+      <div class="visor-cmp">
+      <figure class="cmp " data-cmp style="--pos:50%">
         <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/106-d.webp" alt="Después: Tesla Med, rejuvenecimiento facial" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/106-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
+          <img class="cmp-d" src="assets/img/ad/106-d.webp" alt="Después: Tesla Med, rejuvenecimiento facial" draggable="false">
+          <div class="cmp-a"><img src="assets/img/ad/106-a.webp" alt="Antes: Tesla Med" draggable="false"></div>
           <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
           <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
           <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
         </div>
         <figcaption><strong>Tesla Med</strong><span>Rejuvenecimiento facial</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/014-d.webp" alt="Después: Zionic, resultado tras 6 sesiones" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/014-a.webp" alt="Antes: Zionic" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Zionic">
-        </div>
-        <figcaption><strong>Zionic</strong><span>Resultado tras 6 sesiones</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/027-d.webp" alt="Después: Tratamiento personalizado, acné activo y rojeces" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/027-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Acné activo y rojeces</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Micropigmentación" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/135-d.webp" alt="Después: Micropigmentación, labios y mirada definidos" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/135-a.webp" alt="Antes: Micropigmentación" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Micropigmentación">
-        </div>
-        <figcaption><strong>Micropigmentación</strong><span>Labios y mirada definidos</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Mirada" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/079-d.webp" alt="Después: Lifting de pestañas, curvatura y tinte" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/079-a.webp" alt="Antes: Lifting de pestañas" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Lifting de pestañas">
-        </div>
-        <figcaption><strong>Lifting de pestañas</strong><span>Curvatura y tinte</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/083-d.webp" alt="Después: Tratamiento corporal, glúteos más firmes y sin celulitis" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/083-a.webp" alt="Antes: Tratamiento corporal" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento corporal">
-        </div>
-        <figcaption><strong>Tratamiento corporal</strong><span>Glúteos más firmes y sin celulitis</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/042-d.webp" alt="Después: Symmed, resultado tras 1 sesión" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/042-a.webp" alt="Antes: Symmed" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Symmed">
-        </div>
-        <figcaption><strong>Symmed</strong><span>Resultado tras 1 sesión</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Mirada" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/097-d.webp" alt="Después: Extensiones, volumen ruso" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/097-a.webp" alt="Antes: Extensiones" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Extensiones">
-        </div>
-        <figcaption><strong>Extensiones</strong><span>Volumen ruso</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/111-d.webp" alt="Después: Tesla Med, contorno de ojos y arrugas" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/111-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Contorno de ojos y arrugas</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/059-d.webp" alt="Después: Tesla Med, tratamiento de estrías" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/059-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Tratamiento de estrías</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Micropigmentación" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/133-d.webp" alt="Después: Micropigmentación, eyeliner perfecto" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/133-a.webp" alt="Antes: Micropigmentación" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Micropigmentación">
-        </div>
-        <figcaption><strong>Micropigmentación</strong><span>Eyeliner perfecto</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/007-d.webp" alt="Después: Symmed, rejuvenecimiento facial" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/007-a.webp" alt="Antes: Symmed" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Symmed">
-        </div>
-        <figcaption><strong>Symmed</strong><span>Rejuvenecimiento facial</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/090-d.webp" alt="Después: Tesla Med, manchas" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/090-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Manchas</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Mirada" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/063-d.webp" alt="Después: Lifting de pestañas, mirada abierta sin rímel" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/063-a.webp" alt="Antes: Lifting de pestañas" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Lifting de pestañas">
-        </div>
-        <figcaption><strong>Lifting de pestañas</strong><span>Mirada abierta sin rímel</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/050-d.webp" alt="Después: Symmed, resultado tras 1 sesión" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/050-a.webp" alt="Antes: Symmed" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Symmed">
-        </div>
-        <figcaption><strong>Symmed</strong><span>Resultado tras 1 sesión</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/140-d.webp" alt="Después: Symmed, cuello y escote" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/140-a.webp" alt="Antes: Symmed" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Symmed">
-        </div>
-        <figcaption><strong>Symmed</strong><span>Cuello y escote</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Mirada" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/020-d.webp" alt="Después: Extensiones, pelo a pelo" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/020-a.webp" alt="Antes: Extensiones" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Extensiones">
-        </div>
-        <figcaption><strong>Extensiones</strong><span>Pelo a pelo</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Mirada" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/071-d.webp" alt="Después: Lifting de pestañas, resultado natural" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/071-a.webp" alt="Antes: Lifting de pestañas" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Lifting de pestañas">
-        </div>
-        <figcaption><strong>Lifting de pestañas</strong><span>Resultado natural</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb128-d.webp" alt="Después: Tesla Med, rejuvenecimiento global del rostro" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb128-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Rejuvenecimiento global del rostro</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb097-d.webp" alt="Después: Tesla Med, labios con volumen sin agujas" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb097-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Labios con volumen sin agujas</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb094-d.webp" alt="Después: Tesla Med, acné activo" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb094-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Acné activo</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb098-d.webp" alt="Después: Tesla Med, luminosidad y firmeza" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb098-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Luminosidad y firmeza</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb103-d.webp" alt="Después: Tesla Med, labios y código de barras" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb103-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Labios y código de barras</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb093-d.webp" alt="Después: Tesla Med, arrugas de la frente" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb093-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Arrugas de la frente</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb117-d.webp" alt="Después: Tesla Med, mirada más abierta" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb117-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Mirada más abierta</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb095-d.webp" alt="Después: Tesla Med, párpados" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb095-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Párpados</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb096-d.webp" alt="Después: Tesla Med, óvalo facial" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb096-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Óvalo facial</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb100-d.webp" alt="Después: Tesla Med, tono y textura" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb100-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Tono y textura</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb118-d.webp" alt="Después: Tesla Med, arrugas profundas" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb118-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Arrugas profundas</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb119-d.webp" alt="Después: Tesla Med, patas de gallo" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb119-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Patas de gallo</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb126-d.webp" alt="Después: Tesla Med, rejuvenecimiento facial" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb126-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Rejuvenecimiento facial</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb127-d.webp" alt="Después: Tesla Med, arrugas del contorno" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb127-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Arrugas del contorno</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb129-d.webp" alt="Después: Tesla Med, bolsas y ojeras" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb129-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Bolsas y ojeras</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb156-d.webp" alt="Después: Symmed, mirada rejuvenecida" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb156-a.webp" alt="Antes: Symmed" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Symmed">
-        </div>
-        <figcaption><strong>Symmed</strong><span>Mirada rejuvenecida</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Rostro" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb158-d.webp" alt="Después: Symmed, arrugas de expresión" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb158-a.webp" alt="Antes: Symmed" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Symmed">
-        </div>
-        <figcaption><strong>Symmed</strong><span>Arrugas de expresión</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb178-d.webp" alt="Después: Zionic, 6 sesiones · abdomen" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb178-a.webp" alt="Antes: Zionic" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Zionic">
-        </div>
-        <figcaption><strong>Zionic</strong><span>6 sesiones · abdomen</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb179-d.webp" alt="Después: Zionic, 6 sesiones · flacidez abdominal" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb179-a.webp" alt="Antes: Zionic" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Zionic">
-        </div>
-        <figcaption><strong>Zionic</strong><span>6 sesiones · flacidez abdominal</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb177-d.webp" alt="Después: Tratamiento personalizado, abdomen y cintura" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb177-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Abdomen y cintura</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb175-d.webp" alt="Después: Tratamiento personalizado, perfil más definido" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb175-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Perfil más definido</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb176-d.webp" alt="Después: Tratamiento personalizado, cintura y cadera" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb176-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Cintura y cadera</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb087-d.webp" alt="Después: Tratamiento personalizado, glúteos y celulitis" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb087-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Glúteos y celulitis</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb085-d.webp" alt="Después: Tratamiento personalizado, glúteos más firmes" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb085-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Glúteos más firmes</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb086-d.webp" alt="Después: Tratamiento personalizado, celulitis lateral" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb086-a.webp" alt="Antes: Tratamiento personalizado" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tratamiento personalizado">
-        </div>
-        <figcaption><strong>Tratamiento personalizado</strong><span>Celulitis lateral</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb101-d.webp" alt="Después: Tesla Med, flacidez corporal" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb101-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Flacidez corporal</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Cuerpo" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb104-d.webp" alt="Después: Tesla Med, abdomen y estrías" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb104-a.webp" alt="Antes: Tesla Med" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Tesla Med">
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Abdomen y estrías</span></figcaption>
-      </figure>
-      <figure class="cmp " data-cmp data-cat="Mirada" style="--pos:50%">
-        <div class="cmp-marco">
-          <img class="cmp-d" src="assets/img/ad/fb082-d.webp" alt="Después: Lifting de pestañas, curvatura perfecta" loading="lazy" draggable="false">
-          <div class="cmp-a"><img src="assets/img/ad/fb082-a.webp" alt="Antes: Lifting de pestañas" loading="lazy" draggable="false"></div>
-          <span class="cmp-et cmp-et-a">Antes</span><span class="cmp-et cmp-et-d">Después</span>
-          <div class="cmp-linea" aria-hidden="true"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-          <input class="cmp-rango" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después de Lifting de pestañas">
-        </div>
-        <figcaption><strong>Lifting de pestañas</strong><span>Curvatura perfecta</span></figcaption>
       </figure></div>
+      <div class="visor-info" aria-live="polite">
+        <p class="visor-num"><strong data-v="i">01</strong> / <span data-v="total">46</span></p>
+        <p class="eyebrow" data-v="c">Rostro</p>
+        <h2 class="h2" data-v="t">Tesla Med</h2>
+        <p class="visor-det" data-v="d">Rejuvenecimiento facial</p>
+        <p class="visor-txt" data-v="x">Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional.</p>
+        <div class="visor-acc">
+          <button class="btn btn-tinta btn-sm" data-reserva data-servicio="Tesla Med" data-v-res><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z" fill="currentColor"/></svg> Quiero este resultado</button>
+          <a class="enlace" href="tesla-med.html" data-v-url>Ver el tratamiento <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="visor-nav">
+          <button class="visor-prev" aria-label="Caso anterior"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="visor-barra"><span></span></div>
+          <button class="visor-next" aria-label="Caso siguiente"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="visor-tira"><button class="visor-mini on" data-i="0" data-cat="Rostro" aria-label="Ver caso 1: Tesla Med"><img src="assets/img/ad/106-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="1" data-cat="Cuerpo" aria-label="Ver caso 2: Zionic"><img src="assets/img/ad/014-d.webp" alt="" loading="lazy"><span>Zionic</span></button><button class="visor-mini" data-i="2" data-cat="Rostro" aria-label="Ver caso 3: Tratamiento personalizado"><img src="assets/img/ad/027-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="3" data-cat="Micropigmentación" aria-label="Ver caso 4: Micropigmentación"><img src="assets/img/ad/135-d.webp" alt="" loading="lazy"><span>Micropigmentación</span></button><button class="visor-mini" data-i="4" data-cat="Mirada" aria-label="Ver caso 5: Lifting de pestañas"><img src="assets/img/ad/079-d.webp" alt="" loading="lazy"><span>Lifting de pestañas</span></button><button class="visor-mini" data-i="5" data-cat="Cuerpo" aria-label="Ver caso 6: Tratamiento corporal"><img src="assets/img/ad/083-d.webp" alt="" loading="lazy"><span>Tratamiento corporal</span></button><button class="visor-mini" data-i="6" data-cat="Rostro" aria-label="Ver caso 7: Symmed"><img src="assets/img/ad/042-d.webp" alt="" loading="lazy"><span>Symmed</span></button><button class="visor-mini" data-i="7" data-cat="Mirada" aria-label="Ver caso 8: Extensiones"><img src="assets/img/ad/097-d.webp" alt="" loading="lazy"><span>Extensiones</span></button><button class="visor-mini" data-i="8" data-cat="Rostro" aria-label="Ver caso 9: Tesla Med"><img src="assets/img/ad/111-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="9" data-cat="Cuerpo" aria-label="Ver caso 10: Tesla Med"><img src="assets/img/ad/059-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="10" data-cat="Micropigmentación" aria-label="Ver caso 11: Micropigmentación"><img src="assets/img/ad/133-d.webp" alt="" loading="lazy"><span>Micropigmentación</span></button><button class="visor-mini" data-i="11" data-cat="Rostro" aria-label="Ver caso 12: Symmed"><img src="assets/img/ad/007-d.webp" alt="" loading="lazy"><span>Symmed</span></button><button class="visor-mini" data-i="12" data-cat="Rostro" aria-label="Ver caso 13: Tesla Med"><img src="assets/img/ad/090-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="13" data-cat="Mirada" aria-label="Ver caso 14: Lifting de pestañas"><img src="assets/img/ad/063-d.webp" alt="" loading="lazy"><span>Lifting de pestañas</span></button><button class="visor-mini" data-i="14" data-cat="Rostro" aria-label="Ver caso 15: Symmed"><img src="assets/img/ad/050-d.webp" alt="" loading="lazy"><span>Symmed</span></button><button class="visor-mini" data-i="15" data-cat="Rostro" aria-label="Ver caso 16: Symmed"><img src="assets/img/ad/140-d.webp" alt="" loading="lazy"><span>Symmed</span></button><button class="visor-mini" data-i="16" data-cat="Mirada" aria-label="Ver caso 17: Extensiones"><img src="assets/img/ad/020-d.webp" alt="" loading="lazy"><span>Extensiones</span></button><button class="visor-mini" data-i="17" data-cat="Mirada" aria-label="Ver caso 18: Lifting de pestañas"><img src="assets/img/ad/071-d.webp" alt="" loading="lazy"><span>Lifting de pestañas</span></button><button class="visor-mini" data-i="18" data-cat="Rostro" aria-label="Ver caso 19: Tesla Med"><img src="assets/img/ad/fb128-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="19" data-cat="Rostro" aria-label="Ver caso 20: Tesla Med"><img src="assets/img/ad/fb097-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="20" data-cat="Rostro" aria-label="Ver caso 21: Tesla Med"><img src="assets/img/ad/fb094-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="21" data-cat="Rostro" aria-label="Ver caso 22: Tesla Med"><img src="assets/img/ad/fb098-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="22" data-cat="Rostro" aria-label="Ver caso 23: Tesla Med"><img src="assets/img/ad/fb103-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="23" data-cat="Rostro" aria-label="Ver caso 24: Tesla Med"><img src="assets/img/ad/fb093-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="24" data-cat="Rostro" aria-label="Ver caso 25: Tesla Med"><img src="assets/img/ad/fb117-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="25" data-cat="Rostro" aria-label="Ver caso 26: Tesla Med"><img src="assets/img/ad/fb095-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="26" data-cat="Rostro" aria-label="Ver caso 27: Tesla Med"><img src="assets/img/ad/fb096-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="27" data-cat="Rostro" aria-label="Ver caso 28: Tesla Med"><img src="assets/img/ad/fb100-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="28" data-cat="Rostro" aria-label="Ver caso 29: Tesla Med"><img src="assets/img/ad/fb118-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="29" data-cat="Rostro" aria-label="Ver caso 30: Tesla Med"><img src="assets/img/ad/fb119-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="30" data-cat="Rostro" aria-label="Ver caso 31: Tesla Med"><img src="assets/img/ad/fb126-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="31" data-cat="Rostro" aria-label="Ver caso 32: Tesla Med"><img src="assets/img/ad/fb127-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="32" data-cat="Rostro" aria-label="Ver caso 33: Tesla Med"><img src="assets/img/ad/fb129-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="33" data-cat="Rostro" aria-label="Ver caso 34: Symmed"><img src="assets/img/ad/fb156-d.webp" alt="" loading="lazy"><span>Symmed</span></button><button class="visor-mini" data-i="34" data-cat="Rostro" aria-label="Ver caso 35: Symmed"><img src="assets/img/ad/fb158-d.webp" alt="" loading="lazy"><span>Symmed</span></button><button class="visor-mini" data-i="35" data-cat="Cuerpo" aria-label="Ver caso 36: Zionic"><img src="assets/img/ad/fb178-d.webp" alt="" loading="lazy"><span>Zionic</span></button><button class="visor-mini" data-i="36" data-cat="Cuerpo" aria-label="Ver caso 37: Zionic"><img src="assets/img/ad/fb179-d.webp" alt="" loading="lazy"><span>Zionic</span></button><button class="visor-mini" data-i="37" data-cat="Cuerpo" aria-label="Ver caso 38: Tratamiento personalizado"><img src="assets/img/ad/fb177-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="38" data-cat="Cuerpo" aria-label="Ver caso 39: Tratamiento personalizado"><img src="assets/img/ad/fb175-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="39" data-cat="Cuerpo" aria-label="Ver caso 40: Tratamiento personalizado"><img src="assets/img/ad/fb176-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="40" data-cat="Cuerpo" aria-label="Ver caso 41: Tratamiento personalizado"><img src="assets/img/ad/fb087-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="41" data-cat="Cuerpo" aria-label="Ver caso 42: Tratamiento personalizado"><img src="assets/img/ad/fb085-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="42" data-cat="Cuerpo" aria-label="Ver caso 43: Tratamiento personalizado"><img src="assets/img/ad/fb086-d.webp" alt="" loading="lazy"><span>Tratamiento personalizado</span></button><button class="visor-mini" data-i="43" data-cat="Cuerpo" aria-label="Ver caso 44: Tesla Med"><img src="assets/img/ad/fb101-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="44" data-cat="Cuerpo" aria-label="Ver caso 45: Tesla Med"><img src="assets/img/ad/fb104-d.webp" alt="" loading="lazy"><span>Tesla Med</span></button><button class="visor-mini" data-i="45" data-cat="Mirada" aria-label="Ver caso 46: Lifting de pestañas"><img src="assets/img/ad/fb082-d.webp" alt="" loading="lazy"><span>Lifting de pestañas</span></button></div>
   </div>
+  <script type="application/json" id="casos">[{"n": "106", "t": "Tesla Med", "d": "Rejuvenecimiento facial", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "014", "t": "Zionic", "d": "Resultado tras 6 sesiones", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "027", "t": "Tratamiento personalizado", "d": "Acné activo y rojeces", "c": "Rostro", "u": "faciales.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "135", "t": "Micropigmentación", "d": "Labios y mirada definidos", "c": "Micropigmentación", "u": "cejas-micropigmentacion.html", "x": "Estudiamos tus facciones y el tono ideal antes de trazar una sola línea. Primera consulta gratuita."}, {"n": "079", "t": "Lifting de pestañas", "d": "Curvatura y tinte", "c": "Mirada", "u": "pestanas.html", "x": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo."}, {"n": "083", "t": "Tratamiento corporal", "d": "Glúteos más firmes y sin celulitis", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "042", "t": "Symmed", "d": "Resultado tras 1 sesión", "c": "Rostro", "u": "tecnologia.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "097", "t": "Extensiones", "d": "Volumen ruso", "c": "Mirada", "u": "pestanas.html", "x": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo."}, {"n": "111", "t": "Tesla Med", "d": "Contorno de ojos y arrugas", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "059", "t": "Tesla Med", "d": "Tratamiento de estrías", "c": "Cuerpo", "u": "tesla-med.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "133", "t": "Micropigmentación", "d": "Eyeliner perfecto", "c": "Micropigmentación", "u": "cejas-micropigmentacion.html", "x": "Estudiamos tus facciones y el tono ideal antes de trazar una sola línea. Primera consulta gratuita."}, {"n": "007", "t": "Symmed", "d": "Rejuvenecimiento facial", "c": "Rostro", "u": "tecnologia.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "090", "t": "Tesla Med", "d": "Manchas", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "063", "t": "Lifting de pestañas", "d": "Mirada abierta sin rímel", "c": "Mirada", "u": "pestanas.html", "x": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo."}, {"n": "050", "t": "Symmed", "d": "Resultado tras 1 sesión", "c": "Rostro", "u": "tecnologia.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "140", "t": "Symmed", "d": "Cuello y escote", "c": "Rostro", "u": "tecnologia.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "020", "t": "Extensiones", "d": "Pelo a pelo", "c": "Mirada", "u": "pestanas.html", "x": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo."}, {"n": "071", "t": "Lifting de pestañas", "d": "Resultado natural", "c": "Mirada", "u": "pestanas.html", "x": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo."}, {"n": "fb128", "t": "Tesla Med", "d": "Rejuvenecimiento global del rostro", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb097", "t": "Tesla Med", "d": "Labios con volumen sin agujas", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb094", "t": "Tesla Med", "d": "Acné activo", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb098", "t": "Tesla Med", "d": "Luminosidad y firmeza", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb103", "t": "Tesla Med", "d": "Labios y código de barras", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb093", "t": "Tesla Med", "d": "Arrugas de la frente", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb117", "t": "Tesla Med", "d": "Mirada más abierta", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb095", "t": "Tesla Med", "d": "Párpados", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb096", "t": "Tesla Med", "d": "Óvalo facial", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb100", "t": "Tesla Med", "d": "Tono y textura", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb118", "t": "Tesla Med", "d": "Arrugas profundas", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb119", "t": "Tesla Med", "d": "Patas de gallo", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb126", "t": "Tesla Med", "d": "Rejuvenecimiento facial", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb127", "t": "Tesla Med", "d": "Arrugas del contorno", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb129", "t": "Tesla Med", "d": "Bolsas y ojeras", "c": "Rostro", "u": "tesla-med.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb156", "t": "Symmed", "d": "Mirada rejuvenecida", "c": "Rostro", "u": "tecnologia.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb158", "t": "Symmed", "d": "Arrugas de expresión", "c": "Rostro", "u": "tecnologia.html", "x": "Cada piel tiene su protocolo: primero la diagnosticamos y después combinamos aparatología, técnicas manuales y cosmética profesional."}, {"n": "fb178", "t": "Zionic", "d": "6 sesiones · abdomen", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb179", "t": "Zionic", "d": "6 sesiones · flacidez abdominal", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb177", "t": "Tratamiento personalizado", "d": "Abdomen y cintura", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb175", "t": "Tratamiento personalizado", "d": "Perfil más definido", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb176", "t": "Tratamiento personalizado", "d": "Cintura y cadera", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb087", "t": "Tratamiento personalizado", "d": "Glúteos y celulitis", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb085", "t": "Tratamiento personalizado", "d": "Glúteos más firmes", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb086", "t": "Tratamiento personalizado", "d": "Celulitis lateral", "c": "Cuerpo", "u": "corporales.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb101", "t": "Tesla Med", "d": "Flacidez corporal", "c": "Cuerpo", "u": "tesla-med.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb104", "t": "Tesla Med", "d": "Abdomen y estrías", "c": "Cuerpo", "u": "tesla-med.html", "x": "Medimos y fotografiamos en cada visita para que veas la evolución real, sesión a sesión, sin cirugía ni tiempo de recuperación."}, {"n": "fb082", "t": "Lifting de pestañas", "d": "Curvatura perfecta", "c": "Mirada", "u": "pestanas.html", "x": "Diseñamos curvatura, grosor y longitud según la forma de tus ojos para que el resultado sea tuyo, no de catálogo."}]</script>
 </section>
-<section class="sec res-home">
-  <div class="wrap"><div class="sec-cab reveal"><div><p class="eyebrow">Tal y como los publicamos</p><h2 class="h2">Nuestros <em>casos</em> en Instagram</h2></div></div></div>
-  <div class="res-pista" data-arrastre><button class="res-item res-ancho" data-lb="assets/img/resultados/018.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/018.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/098.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/098.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/106.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/106.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/014.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/014.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/135.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/135.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/079.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/079.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/042.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/042.webp" alt="Antes y después de un tratamiento" loading="lazy"></button><button class="res-item res-ancho" data-lb="assets/img/resultados/059.webp" aria-label="Ampliar resultado"><img src="assets/img/resultados/059.webp" alt="Antes y después de un tratamiento" loading="lazy"></button></div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-cab reveal"><div><p class="eyebrow">Por tipo de tratamiento</p><h2 class="h2">Elige qué quieres <em>ver</em></h2></div></div>
+    <div class="capitulos"><button class="capitulo reveal" data-ir-cat="Rostro"><img src="assets/img/ad/fb128-d.webp" alt="" loading="lazy"><span><small>25 casos</small><strong>Rostro</strong><em>Ver transformaciones <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></em></span></button><button class="capitulo reveal" data-ir-cat="Cuerpo"><img src="assets/img/ad/fb178-d.webp" alt="" loading="lazy"><span><small>13 casos</small><strong>Cuerpo</strong><em>Ver transformaciones <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></em></span></button><button class="capitulo reveal" data-ir-cat="Mirada"><img src="assets/img/ad/079-d.webp" alt="" loading="lazy"><span><small>6 casos</small><strong>Mirada</strong><em>Ver transformaciones <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></em></span></button><button class="capitulo reveal" data-ir-cat="Micropigmentación"><img src="assets/img/ad/135-d.webp" alt="" loading="lazy"><span><small>2 casos</small><strong>Micropigmentación</strong><em>Ver transformaciones <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></em></span></button></div>
+  </div>
 </section>
 
 <section class="sec resenas-sec">
@@ -630,73 +203,6 @@
       <div class="carrusel-nav"><button class="c-prev" aria-label="Anterior"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button class="c-next" aria-label="Siguiente"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
     </div>
   </div>
-</section>
-
-
-<section class="sec reels-sec">
-  <div class="wrap">
-    <div class="sec-cab reveal">
-      <div><p class="eyebrow">Reels desde cabina</p><h2 class="h2">Así se vive <em>dentro</em></h2></div>
-      <a class="enlace" href="https://www.instagram.com/rociocastello_estetica/" target="_blank" rel="noopener">Más en Instagram <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </div>
-  </div>
-  <div class="reels-pista" data-arrastre>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-kobido.webp" data-src="assets/video/reel-kobido.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Masaje Kobido</strong><span>El lifting japonés sin agujas</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-zionic.webp" data-src="assets/video/reel-zionic.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Zionic</strong><span>Adiós grasa localizada</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-pestanas.webp" data-src="assets/video/reel-pestanas.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Extensiones</strong><span>Volumen a medida</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-tesla.webp" data-src="assets/video/reel-tesla.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Tesla Med</strong><span>Así preparamos tu cabina</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-henna.webp" data-src="assets/video/reel-henna.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Cejas con henna</strong><span>Técnica 100 % natural</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-unas.webp" data-src="assets/video/reel-unas.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Manicura</strong><span>Diseños a mano alzada</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-pinceles.webp" data-src="assets/video/reel-pinceles.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Ritual de pinceles</strong><span>Empieza la semana así</span></figcaption>
-      </figure>
-      <figure class="reel">
-        <div class="reel-marco">
-          <video muted loop playsinline preload="none" poster="assets/video/reel-limpieza.webp" data-src="assets/video/reel-limpieza.mp4"></video>
-          <span class="reel-ig"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></span>
-        </div>
-        <figcaption><strong>Higiene facial</strong><span>Bye bye impurezas</span></figcaption>
-      </figure></div>
 </section>
 
 </main>
@@ -762,6 +268,6 @@
   </form>
 </dialog>
 
-<script src="assets/js/site.js?v=10" defer></script>
+<script src="assets/js/site.js?v=13" defer></script>
 </body>
 </html>
